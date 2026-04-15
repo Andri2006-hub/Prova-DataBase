@@ -102,7 +102,35 @@ A combinação de **Isolamento (ACID)** e (mecanismos de bloqueio) assegura que,
 
 
 
+## Modelo Lógico
 
+### Tabela: Aluno
+- ID_Matricula (PK)
+- Nome_Usuario
+- Email_Usuario
+- Endereco_Usuario
+- Data_Ingresso
+
+### Tabela: Disciplina
+- Cod_Servico_Academico (PK)
+- Nome_Disciplina
+- Carga_H
+
+### Tabela: Docente
+- Matricula_Operador_Pedagogico (PK)
+- Nome_Docente
+
+### Tabela: Matricula
+- ID_Matricula (FK)
+- Cod_Servico_Academico (FK)
+- Matricula_Operador_Pedagogico (FK)
+- Ciclo_Calendario
+- Score_Final
+
+### Relacionamentos:
+- Aluno 1:N Matricula
+- Disciplina 1:N Matricula
+- Docente 1:N Matricula
 
 
 
